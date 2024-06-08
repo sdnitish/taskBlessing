@@ -1,0 +1,30 @@
+.page_nvi {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border: 1px solid rgb(224 242 254);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: all 350ms;
+    background: white;
+}
+
+.page_nvi.active,
+.page_nvi:hover {
+    background: rgb(224 242 254);
+    margin-left: 8px;
+    /* width: 105%; */
+}
+
+.page_nvi span {
+    line-height: 1;
+}
+
+.name_Icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

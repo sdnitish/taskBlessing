@@ -1,0 +1,228 @@
+.counter-wrap1 {
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0px 0px 0px 4px var(--secondary-clr);
+    margin-top: 36px;
+    margin-bottom: 36px;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.counter-card-wrap {
+    padding: 30px;
+}
+
+.counter-card-wrap .counter-card {
+    min-width: 224px;
+    margin-bottom: 28px;
+}
+
+.counter-checklist-wrap {
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 40px 60px;
+    height: 100%;
+    background-image:  url(../../../public/images/bg/counter-checklist-bg.jpg);
+    background-size: cover;
+}
+
+.counter-checklist-wrap:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,var(--primry-clr) -1.06%,rgba(232,9,46,0));
+    z-index: -1
+}
+
+.counter-card {
+    position: relative;
+    display: inline-flex;
+    gap: 25px;
+    align-items: center
+}
+
+.counter-card_wrap~.counter-card_wrap {
+    border-left: 1px solid #2c2c2c
+}
+
+.counter-card_wrap~.counter-card_wrap .counter-card.style2 {
+    padding-left: 45px
+}
+
+.counter-card_wrap:last-child .counter-card.style2 {
+    padding-right: 0
+}
+
+.counter-card_number {
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.counter-card_text {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: -.4em
+}
+
+.counter-card_icon {
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    background-color: var(--primry-clr);
+    text-align: center;
+    position: relative;
+    margin: auto
+}
+
+.counter-card_icon img {
+    transition: all .4s ease-in-out
+}
+
+.counter-card:hover .counter-card_icon:after {
+    margin: 0;
+    border-width: 10px;
+    border-color: var(--theme-color)
+}
+
+.counter-card:hover .counter-card_icon img {
+    transform: rotateY(180deg)
+}
+
+@media(max-width: 1399px) {
+    .counter-card-wrap {
+        padding:40px
+    }
+
+    .counter-card_number {
+        font-size: 44px
+    }
+
+    .counter-card_icon {
+        width: 70px;
+        height: 70px;
+        line-height: 70px
+    }
+
+    .counter-card-wrap .counter-card {
+        min-width: 214px
+    }
+}
+
+@media(max-width: 1199px) {
+    .counter-card-wrap .counter-card {
+        min-width:185px
+    }
+
+    .counter-card_number {
+        font-size: 34px
+    }
+
+    .counter-card_text {
+        font-size: 16px
+    }
+
+    .counter-card-wrap {
+        padding: 30px
+    }
+
+    .counter-card-wrap .counter-card {
+        min-width: max-content
+    }
+}
+
+@media(max-width: 991px) {
+    .counter-card-wrap .counter-card {
+        text-align:start
+    }
+
+    .counter-card-wrap {
+        padding: 30px;
+        text-align: center
+    }
+}
+
+@media(max-width: 575px) {
+    .counter-checklist-wrap {
+        padding:40px
+    }
+}
+.checklist li {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 22px;
+    display: flex;
+    color: white;
+}
+.checklist.style-white li {
+    color: white;
+}
+.checklist.style-white li i, .checklist.style-white li svg {
+    font-size: 14px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.call-media-wrap .icon {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: var(--secondary-clr);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    flex: none;
+}
+.call-media-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    text-align: start;
+}
+.counter-area-2 {
+    padding: 60px;
+    border-radius: 5px;
+    margin-top: -111px;
+    position: relative;
+    z-index: 1
+}
+
+.counter-card.style2 {
+    gap: 20px
+}
+
+.counter-card.style2 .counter-card_icon {
+    background: var(--white-color)
+}
+
+.counter-card.style2 .counter-card_number,.counter-card.style2 .counter-card_text {
+    color: var(--white-color)
+}
+
+.counter-divider {
+    height: 100%;
+    width: 1px;
+    background: var(--smoke-color)
+}
+
+@media(max-width: 1299px) {
+    .counter-area-2 {
+        padding:60px 40px
+    }
+}
+
+@media(max-width: 991px) {
+    .counter-area-2 {
+        padding:60px
+    }
+}
+
+@media(max-width: 767px) {
+    .counter-area-2 {
+        padding:40px
+    }
+}

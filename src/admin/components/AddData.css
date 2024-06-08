@@ -1,0 +1,42 @@
+.add_data span {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    padding: 8px 10px;
+    display: inline-block;
+}
+
+.add_data select,
+.add_data input {
+    border: 1px solid gray;
+    width: 100%;
+    padding: 8px 22px;
+    font-size: 15px;
+    transition: all 350ms;
+    border-radius: 5px;
+}
+
+.add_data select:focus,
+.add_data input:focus {
+    outline: none;
+    border-color: #0d6efd;
+}
+
+.add_box:first-child {
+    margin-top: 21px;
+}
+
+.add_box {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.add_data .Label-box {
+    max-width: 195px;
+    width: 100%;
+}
+
+.add_data .Input-box {
+    width: 100%;
+    max-width: calc(100% - 195px);
+}

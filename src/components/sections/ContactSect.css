@@ -1,0 +1,332 @@
+.Contact_box{
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    /* border-bottom-right-radius: 60px; */
+}
+.contact-container1,
+.contact-container2,
+.contact-container{
+    position: relative;
+    overflow: hidden;
+    height: fit-content;
+}
+/* .contact-container1::before{
+    background: url(../../../public/images/bg/contact_form_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    z-index: 2;
+} */
+.dist-cont{
+    position: relative;
+    z-index: 4;
+}
+/* .contact-container2::before{
+    background: url(../../../public/images/bg/distributor_form_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+.contact-container3::before{
+    background: url(../../../public/images/bg/contact_form_bgmay.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    z-index: 2;
+} */
+.Contact_box form{
+    position: relative;
+    z-index: 5;
+}
+.Contact_box .MuiFormControl-root {
+    width: 100%;
+    margin-bottom: 14px;
+}
+.Contact_box form select,
+.Contact_box form .MuiInputBase-root,
+.Contact_box form .MuiSelect-select,
+.Contact_box form input{
+    background: white;
+    width: 100%;
+}
+.Contact_box form button{
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 218px;
+}
+.contact-info{
+    width: 125%;
+    margin-right: -25%;
+    background: black;
+    padding: 12%;
+    margin-top: 40px;
+    border-top-right-radius: 60px;
+    position: relative;
+    z-index: 10;
+}
+@media (max-width: 767px) {
+    .contact-info {
+        width: 100%;
+        padding: 8%;
+        margin-right: 0;
+    }
+    .Contact_box{
+        /* padding: 8%; */
+    }
+    .contact-container::before{
+        display: none;
+    }
+}
+.contacts-box:hover .cont-icn{
+    background: white;
+    color: var(--primry-clr);
+}
+.contact-info .cont-icn{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    background: var(--primry-clr) ;
+    transition: all 400ms;
+    margin-right: 19px;
+}
+.contact-info .contacts-box{
+    display: flex;
+    align-items: center;
+}
+.contacts-box{
+    margin-bottom: 32px;
+}
+.contacts-box .conta-links{
+    max-width: calc(100% - 100px) ;
+}
+.contacts-box .conta-links .title{
+    font-size: 13px;
+    color: var(--primry-clr);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.contacts-box .conta-links span,
+.contacts-box .conta-links a{
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    line-height: 1.26;
+    display: block;
+    transition: all 400ms;
+}
+.conta-info-bx{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 12px;
+}
+/* .conta-info-bx::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30px;
+    height: 5px;
+    z-index: 5;
+    width: calc(100% - 60px);
+    background-image: radial-gradient(50% 50% at 50% 50%, var(--primry-clr) 56.77%, rgba(4, 206, 120, 0) 100%);
+} */
+.conta-info-bx-icn{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--primry-clr);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 650ms ease;
+}
+.conta-info-bx-icn img{
+    width: 35px;
+}
+.conta-info-bx-icn svg{
+    font-size: 32px;
+}
+.conta-info-bx:hover .conta-info-bx-bg{
+    background: var(--primry-clr);
+    height: 50%;
+}
+.conta-info-bx:hover .conta-info-bx-bg2{
+    background: var(--secondary-clr);
+    height: 50%;
+}
+.conta-info-bx:hover .conta-info-bx-icn{
+    background: var(--secondary-clr);
+}
+.conta-info-bx-bg{
+    background: var(--secondary-clr);
+    /* border-bottom-left-radius: 25px; */
+    /* border-bottom-right-radius: 25px; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 60%;
+    transition: all 650ms ease;
+}
+.conta-info-bx-bg::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 3;
+      border-top: 10px solid white;
+      border-right: 10px solid white;
+      border-left: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+}
+.conta-info-bx-bg::after{
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 3;
+      border-top: 10px solid white;
+      border-right: 10px solid transparent;
+      border-left: 10px solid white;
+      border-bottom: 10px solid transparent;
+}
+.conta-info-bx-bg2{
+    background: var(--primry-clr);
+    /* border-top-left-radius: 25px; */
+    /* border-top-right-radius: 25px; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 40%;
+    transition: all 650ms ease;
+}
+.conta-info-bx-bg2::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 3;
+      border-top: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-left: 10px solid white;
+      border-bottom: 10px solid white;
+}
+.conta-info-bx-bg2::after{
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 3;
+      border-top: 10px solid transparent;
+      border-right: 10px solid white;
+      border-left: 10px solid transparent;
+      border-bottom: 10px solid white;
+}
+.conta-info-bx-in p.head-add{
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 4px;
+    /* text-align: center; */  
+    /* border-bottom: 1px solid rgb(194, 193, 193); */
+}
+.conta-info-bx-in{
+    width: calc(100% - 80px);
+    position: relative;
+    z-index: 4;
+    padding: 5px;
+}
+.conta-info-bx-in span,
+.conta-info-bx-in a{
+    color: var(--primry-clr);
+    font-size: 19px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 350ms ease;
+    margin-top: 5px;
+    line-height: 1;
+    display: flex;
+    width: 100%;
+    gap: 8px;
+}
+.conta-info-bx-in a:hover{
+    color: var(--secondary-clr);
+}
+.conta-scls ul{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 15px;
+    margin: 35px 0;
+}
+.conta-scls ul li a {
+    background: white;
+    padding: 13px 8px;
+    box-shadow: -6px 9px 4px rgb(184, 184, 184);
+    transition: all 450ms ease;
+}
+.conta-scls ul li a:hover{
+    box-shadow: 3px 4px 4px gray;
+}
+.conta-scls ul li a svg{
+    color: var(--primry-clr);
+    font-size: 30px;
+}
+@media (max-width: 768px) {
+    .conta-scls ul li a svg{
+        font-size: 25px;
+    } 
+    .conta-scls ul{
+        justify-content: center;
+    }
+}
+.conta-scls ul li a svg[data-testid="XIcon"]{
+    color: black;
+}
+.conta-scls ul li a svg[data-testid="WhatsAppIcon"]{
+    color: rgb(7, 164, 7);
+}
+.conta-scls ul li a svg[data-testid="InstagramIcon"]{
+    color: rgb(164, 7, 72);
+}
+.conta-scls ul li a svg[data-testid="FacebookOutlinedIcon"]{
+    color: rgb(19, 48, 161);
+}
+.conta-scls ul li a svg[data-testid="SubscriptionsIcon"]{
+    color: rgb(248, 46, 15);
+}
+.conta-scls ul li a svg[data-testid="LinkedInIcon"]{
+    color: rgb(24, 103, 172);
+}

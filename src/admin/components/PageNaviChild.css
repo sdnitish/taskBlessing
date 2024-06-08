@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+.page_navi_child{
+    margin-left: 18px;
+    height: 0px;
+    overflow: hidden;
+    transition:all 400ms;
+}
+.page_navi_child.active{
+    height: 80px;
+}
+/* .page_nvi {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border:1px solid rgb(224 242 254);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: all 350ms;
+} */
+/* .page_nvi span{
+    line-height: 1;
+}
+.name_Icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.page_navi:hover,
+.page_navi.active {
+    background-color: rgb(224 242 254);
+} */

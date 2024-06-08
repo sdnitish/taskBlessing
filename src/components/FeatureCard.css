@@ -1,0 +1,130 @@
+.feat-card{
+    width: 100%;
+    padding: 26px;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 4px var(--primry-clr);
+}
+
+.feat-card::before{
+    content: '';
+    background: #054274;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 400ms linear;
+    z-index: 2;
+}
+.feat-card.active::before,
+.feat-card:hover::before{
+    width: 100%;
+    left: unset;
+    right: 0;
+}
+.feat-card::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 400ms linear;
+    z-index: 1;
+}
+.feat-card.active::after,
+.feat-card:hover::after{
+    width: 100%;
+    left: unset;
+    right: 0;
+}
+.feat-card-content{
+    width: 100%;
+    position: relative;
+    z-index: 4;
+}
+.feat-card-content .title{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    transition: all 400ms linear;
+    margin: 8px 0;
+}
+.feat-card p{transition: all 400ms;}
+.feat-card:hover p,
+.feat-card.active p,
+.feat-card.active .title,
+.feat-card:hover .title{
+    color: white;
+}
+.icn-and-num{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icn-and-num .Icn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 19px;
+    background: #054274f1;
+    color: var(--primry-clr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 400ms linear;
+}
+.icn-and-num .Icn img{
+    width: 35px ;
+    height: auto;
+}
+.feat-card.active .Icn,
+.feat-card:hover .Icn{
+    background: linear-gradient(to right, #0c375c 0%, #072239 100%);
+    color: white;
+    animation: animate-feat-icn 400ms linear;
+}
+@keyframes animate-feat-icn{
+    0%{ transform: scale(1) rotate(0deg);}
+    50%{ transform: scale(0) rotate(-60deg);}
+    100%{ transform: scale(1) rotate(0deg);}
+}
+.icn-and-num .Numb{
+    font-size: 50px;
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: linear-gradient(to bottom, #83829bd4 0%, white 100%);
+    background: transparent;
+    transition: all 400ms linear;
+}
+.feat-card.active .Numb,
+.feat-card:hover .Numb{
+    -webkit-text-stroke-color:white;
+}
+.arrow-feat{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--primry-clr);
+    background: rgba(255, 0, 0, 0.176);
+    display: block;
+    margin: 8px 0;
+    transition: all 400ms;
+}
+.arrow-feat:hover{ animation: animate-feat-btn 400ms linear;}
+@keyframes animate-feat-btn{
+    0%{ transform: scale(1) rotate(0deg);}
+    50%{ transform: scale(1.16) rotate(-5deg);}
+    100%{ transform: scale(1) rotate(0deg);}
+}
+.feat-card:hover .arrow-feat, .feat-card.active .arrow-feat{background: white; }

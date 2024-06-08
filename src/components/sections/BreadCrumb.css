@@ -1,0 +1,59 @@
+.bread-crumb{
+    width: 100%;
+    padding: 125px 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.411) , rgba(0, 0, 0, 0.571)),  url(../../../public/images/bg/bread-crumb-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* text-align: center; */
+}
+.bread-crumb h1{
+    font-size: 34px;
+    font-weight: 600;
+    color: white;
+}
+.bread-crumb .page-title-box{
+    width: 100%;
+    height: fit-content;
+    margin-top: 21px;
+    text-align: center;
+    display: flex;
+    /* justify-content: center; */
+}
+.bread-crumb .page-title-box ul{
+    display: flex;
+    width: fit-content;
+    text-align: center;
+    padding: 10px 21px;
+    background: white;
+    /* border-radius: 49px; */
+}
+.bread-crumb .page-title-box ul li{
+    margin-right: 16px;
+    position: relative;
+}
+.bread-crumb .page-title-box ul li a,
+.bread-crumb .page-title-box ul li span{
+    font-size: 19px ;
+    font-weight: 600;
+    color: var(--primry-clr);
+    transition: all 400ms linear;
+}
+@media (max-width: 768px) {
+    .bread-crumb .page-title-box ul li a,
+    .bread-crumb .page-title-box ul li span{
+        font-size: 15px;
+    }
+    .bread-crumb{
+        width: 100%;
+        padding: 65px 0;
+    }
+    .bread-crumb .page-title-box ul li{
+        margin-right: 6px;
+    }
+    .bread-crumb h1{
+        font-size: 26px;
+    }
+    .bread-crumb .page-title-box{
+        padding: 8px 10px;
+    }
+}

@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.admin_container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 70px;
+}
+
+.sidebar_with_content {
+    display: flex;
+    /* height: calc(100% - 70px); */
+    height: 100%;
+}
+
+.sidebar_box {
+    width: 18%;
+    padding: 25px;
+    /* border-right: 1px solid rgb(225, 223, 223); */
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.20);
+    z-index: 1;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.content_box {
+    width: 82%;
+    padding: 25px;
+    height: 100%;
+    overflow-y: auto;
+    background: rgb(243 244 246);
+}
+
+.content_box::-webkit-scrollbar,
+.sidebar_box::-webkit-scrollbar {
+    width: 10px;
+    background: rgb(231, 242, 250);
+    /* border-radius: 5px; */
+    box-shadow: 0 0 5px gray inset;
+}
+
+.content_box::-webkit-scrollbar-thumb,
+.sidebar_box::-webkit-scrollbar-thumb {
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 4px gray inset;
+}
+
+.content_container {
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    padding: 21px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20);
+}
+
+/* add data css */
+.add_data {
+    width: calc(100% - 60px);
+    margin: 30px;
+    padding: 21px;
+    font-size: 11px;
+    color: gray;
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px rgb(203, 202, 202);
+}
+.textarea-box{
+    display: flex;
+}
+.textarea-box label{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    padding: 8px 10px;
+    display: inline-block;
+    width: 195px;
+}
+.textarea-box textarea{
+    height: 100px;
+    width: 100%;  
+    max-width: calc(100% - 195px);
+    border: 1px solid gray;
+    width: 100%;
+    padding: 8px 22px;
+    font-size: 15px;
+    transition: all 350ms;
+    border-radius: 5px;
+}
+.textarea-box textarea:focus{
+    outline: none;
+    border-color: #0d6efd;
+}
+.img-logos-admn{
+    height: 46px;
+    width: auto;
+    margin-top: 8px;
+}
