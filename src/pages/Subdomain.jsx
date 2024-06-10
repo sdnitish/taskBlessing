@@ -12,6 +12,7 @@ function Subdomain(props) {
     const param = useParams();
 
     const [subdomain, setSubdomain] = useState([]);
+    const [img, setImg] = useState('');
 
     useEffect(() => {
         getSubdomain();
@@ -22,6 +23,7 @@ function Subdomain(props) {
         result = await result.json();
         if (result.status) {
             setSubdomain(result.subdomain);
+            setImg(result.img);
         }
     }
 
@@ -30,7 +32,7 @@ function Subdomain(props) {
             <HelmetComp metaData={subdomain} />
             <Nav data={subdomain} />
             <BreadCrumb name={subdomain.shortDescription} />
-            <SubdomainSec data={subdomain} hTwoTitle={subdomain.shortDescription} />
+            <SubdomainSec data={subdomain} img={img} hTwoTitle={subdomain.shortDescription} />
             <ContactSect />
             <Footer />
         </>
