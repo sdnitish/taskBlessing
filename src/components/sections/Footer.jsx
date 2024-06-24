@@ -73,7 +73,7 @@ const Footer = () => {
                             </div>
                             <div className='col-lg-3 col-md-6 m-t40'>
                                 <div className='footer-widget'>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d112064.38490368047!2d77.2407296!3d28.629401599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1715771847552!5m2!1sen!2sin" className='w-100' height="219"   loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d112064.38490368047!2d77.2407296!3d28.629401599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1715771847552!5m2!1sen!2sin" className='w-100' height="219"   loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
 
                             </div>
@@ -110,7 +110,7 @@ const Footer = () => {
             <div className='Scroll-top-btn'> <ScrollToTop smooth /></div>
 
             {/* whatsapp btn  */}
-            <div class="what-app">
+            <div className="what-app">
                 <a href={'https://api.whatsapp.com/send?phone='+siteInfo.whatsapp} target="_blank" className="btn-whatsapp-pulse btn-whatsapp-pulse-border">
                     <i className="fab fa-whatsapp"></i>
                 </a>

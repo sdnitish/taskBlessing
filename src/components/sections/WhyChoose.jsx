@@ -12,7 +12,7 @@ const WhyChoose = () => {
         channel="youtube"
         youtube={{ mute: 0, autoplay: 1, theme: "dark" }}
         isOpen={isOpen}
-        videoId="0DDZwlerLKI?si=4NikG_5J8DFfjVkE"
+        videoId="aFo54s53ucc?si=qGtHzSFAL8kdX9Ac"
         onClose={() => setOpen(false)}
       />
       <section className="sect-space why-sect">

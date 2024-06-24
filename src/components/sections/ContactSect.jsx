@@ -263,7 +263,7 @@ const ContactSect = () => {
                                         <div className='col-12 mb-2'>
                                             <ReCAPTCHA
                                                 ref={recaptchaRef}
-                                                sitekey="6LfVBawpAAAAABKJjqc48n3_mncEVRj7aWEWCeZk"
+                                                sitekey="6LcWP_UpAAAAADgcBN21TnCFGWScgkPlF7Dpi3ST"
                                             // onChange={onChange}
                                             />
                                         </div>

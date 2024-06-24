@@ -20,19 +20,19 @@ const HelmetComp = (props) => {
 
     return (
         <Helmet>
-            {/* <meta name="twitter:card" content="summary" />
+            <meta name="twitter:card" content="summary" />
 
-            <meta name="twitter:site" content="@instantwebtech" />
+            <meta name="twitter:site" content="@taskblessingsev" />
 
             <meta name="twitter:title" content={props.metaData.metaTitle} />
 
             <meta name="twitter:description" content={props.metaData.metaDescription} />
 
-            <meta name="twitter:image" content="https://www.instantwebtech.com/images/banners/banner-1-1711952132465.webp" />
+            <meta name="twitter:image" content="https://www.taskblessingsev.com/images/banners/Banner-02-1715854282793-min-1716551853925.jpg" />
 
             <meta property="og:title" content={props.metaData.metaTitle} />
 
-            <meta property="og:site_name" content="Instant Web Technology PVT. LTD." />
+            <meta property="og:site_name" content="Task Blessings" />
 
             <meta property="og:url" content={window.location.href} />
 
@@ -40,13 +40,17 @@ const HelmetComp = (props) => {
 
             <meta property="og:type" content="website" />
 
-            <meta property="og:image" content="https://www.instantwebtech.com/images/banners/banner-1-1711952132465.webp" /> */}
+            <meta property="og:image" content="https://www.taskblessingsev.com/images/banners/Banner-02-1715854282793-min-1716551853925.jpg" />
 
             <link href={process.env.REACT_APP_BASE_URL + 'images/' + siteInfo.favicon} rel="shortcut icon" type="image/png" />
             {Parser().parse(siteInfo.googleAnalytic)}
             <title>{props.metaData.metaTitle}</title>
             <meta name="keywords" content={props.metaData.metaKeywords} />
             <meta name="description" content={props.metaData.metaDescription} />
+
+            <meta name="author" content={siteInfo.compName} />
+
+            <link rel="canonical" href={window.location.href} />
 
             {/* <script type="application/ld+json">
                 {`

@@ -38,7 +38,7 @@ function ProductList(props) {
             <section className='sect-space p-t30'>
                 <div className='container'>
                     <div className='text-center'>
-                        <SectionTitle smTitle='Products' />
+                        <SectionTitle smTitle='Products' mainTitle="Explore Products" />
                     </div>
                     <div className='row m-t30'>
                         {

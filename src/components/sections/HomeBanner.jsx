@@ -85,9 +85,9 @@ const HomeBanner = () => {
                                                 <div className="col-sm-6 col-lg-auto">
                                                     <div className="counter-card">
                                                         <div className="media-body">
-                                                            <h2 className="counter-card_number">
+                                                            <p className="counter-card_number">
                                                                 <div><span className="counter-number"><CountUp end={15} enableScrollSpy scrollSpyOnce="true" />+</span></div>
-                                                            </h2>
+                                                            </p>
                                                             <p className="counter-card_text">Years Of Experience</p>
                                                         </div><div className="counter-card_icon">
                                                             <img width={50} src="images/icon/experience.png" alt="Fixturbo" />
@@ -97,9 +97,9 @@ const HomeBanner = () => {
                                                 <div className="col-sm-6 col-lg-auto">
                                                     <div className="counter-card">
                                                         <div className="media-body">
-                                                            <h2 className="counter-card_number">
+                                                            <p className="counter-card_number">
                                                                 <div><span className="counter-number"><CountUp end={650} enableScrollSpy scrollSpyOnce="true" />+</span></div>
-                                                            </h2>
+                                                            </p>
                                                             <p className="counter-card_text">Total Customers</p>
                                                         </div><div className="counter-card_icon">
                                                             <img width={50} src="images/icon/client.png" alt="Fixturbo" />
@@ -109,9 +109,9 @@ const HomeBanner = () => {
                                                 <div className="col-sm-6 col-lg-auto">
                                                     <div className="counter-card">
                                                         <div className="media-body">
-                                                            <h2 className="counter-card_number">
+                                                            <p className="counter-card_number">
                                                                 <div><span className="counter-number"><CountUp end={600} enableScrollSpy scrollSpyOnce="true" />+</span></div>
-                                                            </h2>
+                                                            </p>
                                                             <p className="counter-card_text">Satisfied Customers</p>
                                                         </div><div className="counter-card_icon">
                                                             <img width={50} src="images/icon/totalcost.png" alt="Fixturbo" />
@@ -121,9 +121,9 @@ const HomeBanner = () => {
                                                 <div className="col-sm-6 col-lg-auto">
                                                     <div className="counter-card">
                                                         <div className="media-body">
-                                                            <h2 className="counter-card_number">
+                                                            <p className="counter-card_number ">
                                                                 <div><span className="counter-number"><CountUp end={890} enableScrollSpy scrollSpyOnce="true" />+</span></div>
-                                                            </h2>
+                                                            </p>
                                                             <p className="counter-card_text">Market We Serve</p>
                                                         </div><div className="counter-card_icon">
                                                             <img width={50} src="images/icon/market.png" alt="Fixturbo" />
@@ -146,8 +146,8 @@ const HomeBanner = () => {
                                             <div className="call-media-wrap">
                                                 <div className="icon"><img src="./images/icon/phone-1.svg" alt="Fixturbo" /></div>
                                                 <div className="media-body">
-                                                    <h6 className="title text-white">Call Us Now:</h6>
-                                                    <h4 className="link"><a className="text-white" href={"tel:"+siteInfo.primaryPhone}>{siteInfo.primaryPhone}</a></h4>
+                                                    <p className="title text-white mb-2">Call Us Now:</p>
+                                                    <p className="link mb-0 h4"><a className="text-white" href={"tel:"+siteInfo.primaryPhone}>{siteInfo.primaryPhone}</a></p>
                                                 </div>
                                             </div>
                                         </div>

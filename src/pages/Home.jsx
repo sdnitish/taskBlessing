@@ -33,6 +33,7 @@ const Home = () => {
     <>
       {loadedData ? (
         <>
+          <HelmetComp metaData={homeData} />
           <Nav />
           <Suspense fallback={<PreLoader />}>
             <HomeBanner />
